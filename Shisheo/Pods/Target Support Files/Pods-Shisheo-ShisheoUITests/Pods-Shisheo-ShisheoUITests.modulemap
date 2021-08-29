@@ -1,0 +1,6 @@
+framework module Pods_Shisheo_ShisheoUITests {
+  umbrella header "Pods-Shisheo-ShisheoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

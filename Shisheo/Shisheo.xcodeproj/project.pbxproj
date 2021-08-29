@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		755943DB26DB70F800B6640D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755943DA26DB70F800B6640D /* AppDelegate.swift */; };
+		755943E426DB70FA00B6640D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755943E326DB70FA00B6640D /* Assets.xcassets */; };
+		755943E726DB70FA00B6640D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755943E526DB70FA00B6640D /* LaunchScreen.storyboard */; };
+		755943F226DB70FB00B6640D /* ShisheoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755943F126DB70FB00B6640D /* ShisheoTests.swift */; };
+		755943FD26DB70FB00B6640D /* ShisheoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755943FC26DB70FB00B6640D /* ShisheoUITests.swift */; };
+		7559441326DB737200B6640D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7559441226DB737200B6640D /* Home.storyboard */; };
+		7559441A26DB73B700B6640D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559441926DB73B700B6640D /* HomeViewController.swift */; };
+		7559441D26DB746000B6640D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559441B26DB746000B6640D /* HomeTableViewCell.swift */; };
+		7559441E26DB746000B6640D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7559441C26DB746000B6640D /* HomeTableViewCell.xib */; };
+		7559442326DB752600B6640D /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442226DB752600B6640D /* StoryboardName.swift */; };
+		7559442726DB75A000B6640D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442626DB75A000B6640D /* Coordinator.swift */; };
+		7559442926DB75B600B6640D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442826DB75B600B6640D /* MainCoordinator.swift */; };
+		7559442C26DB765A00B6640D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442B26DB765A00B6640D /* UIViewController.swift */; };
+		7559442E26DB769000B6640D /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442D26DB769000B6640D /* UIStoryboard.swift */; };
+		7559443026DB76E600B6640D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559442F26DB76E600B6640D /* BaseViewController.swift */; };
+		7559443226DB770E00B6640D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443126DB770E00B6640D /* BaseViewModel.swift */; };
+		7559443426DB7B1400B6640D /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443326DB7B1400B6640D /* UITableView.swift */; };
+		7559443626DB7B6300B6640D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443526DB7B6300B6640D /* CustomTableViewCell.swift */; };
+		7559443826DB7B7100B6640D /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443726DB7B7100B6640D /* ReusableView.swift */; };
+		7559443A26DB7BE400B6640D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443926DB7BE400B6640D /* HomeViewModel.swift */; };
+		7559443F26DB81A500B6640D /* Wrapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559443E26DB81A500B6640D /* Wrapable.swift */; };
+		7559444126DB82A900B6640D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444026DB82A900B6640D /* Connectivity.swift */; };
+		7559444326DB82D800B6640D /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444226DB82D800B6640D /* CustomError.swift */; };
+		7559444726DB83DE00B6640D /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444626DB83DE00B6640D /* URLs.swift */; };
+		7559444B26DB84B700B6640D /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444A26DB84B700B6640D /* APIRoute.swift */; };
+		7559444E26DB853D00B6640D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444D26DB853D00B6640D /* HomeModel.swift */; };
+		7559445026DB869400B6640D /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559444F26DB869400B6640D /* HomeService.swift */; };
+		91F22A0DE96F611A46D8AD19 /* Pods_Shisheo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818FFCD37FFFD08115AD1E56 /* Pods_Shisheo.framework */; };
+		AFEE53E8E8C5F916A4C73673 /* Pods_ShisheoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C3BF36FB6856467190344C /* Pods_ShisheoTests.framework */; };
+		D2F00124C94A620554E1ECC4 /* Pods_Shisheo_ShisheoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF2CD4AF5A0CB2889F2215F /* Pods_Shisheo_ShisheoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		755943EE26DB70FA00B6640D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 755943CF26DB70F800B6640D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 755943D626DB70F800B6640D;
+			remoteInfo = Shisheo;
+		};
+		755943F926DB70FB00B6640D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 755943CF26DB70F800B6640D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 755943D626DB70F800B6640D;
+			remoteInfo = Shisheo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050EF9973C7A8A2264D07D1D /* Pods-ShisheoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShisheoTests.debug.xcconfig"; path = "Target Support Files/Pods-ShisheoTests/Pods-ShisheoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DF2CD4AF5A0CB2889F2215F /* Pods_Shisheo_ShisheoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shisheo_ShisheoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D8DA7895E356709C75A17D /* Pods-Shisheo-ShisheoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shisheo-ShisheoUITests.release.xcconfig"; path = "Target Support Files/Pods-Shisheo-ShisheoUITests/Pods-Shisheo-ShisheoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		476E6090AFEA46E0B80F64C5 /* Pods-ShisheoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShisheoTests.release.xcconfig"; path = "Target Support Files/Pods-ShisheoTests/Pods-ShisheoTests.release.xcconfig"; sourceTree = "<group>"; };
+		572370F99E93CFBC0F07A3BF /* Pods-Shisheo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shisheo.debug.xcconfig"; path = "Target Support Files/Pods-Shisheo/Pods-Shisheo.debug.xcconfig"; sourceTree = "<group>"; };
+		72C3BF36FB6856467190344C /* Pods_ShisheoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShisheoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755943D726DB70F800B6640D /* Shisheo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shisheo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		755943DA26DB70F800B6640D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		755943E326DB70FA00B6640D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		755943E626DB70FA00B6640D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		755943E826DB70FA00B6640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755943ED26DB70FA00B6640D /* ShisheoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShisheoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		755943F126DB70FB00B6640D /* ShisheoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShisheoTests.swift; sourceTree = "<group>"; };
+		755943F326DB70FB00B6640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755943F826DB70FB00B6640D /* ShisheoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShisheoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		755943FC26DB70FB00B6640D /* ShisheoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShisheoUITests.swift; sourceTree = "<group>"; };
+		755943FE26DB70FB00B6640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7559441226DB737200B6640D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7559441926DB73B700B6640D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7559441B26DB746000B6640D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7559441C26DB746000B6640D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		7559442226DB752600B6640D /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		7559442626DB75A000B6640D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7559442826DB75B600B6640D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		7559442B26DB765A00B6640D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7559442D26DB769000B6640D /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		7559442F26DB76E600B6640D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7559443126DB770E00B6640D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7559443326DB7B1400B6640D /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		7559443526DB7B6300B6640D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7559443726DB7B7100B6640D /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		7559443926DB7BE400B6640D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7559443E26DB81A500B6640D /* Wrapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapable.swift; sourceTree = "<group>"; };
+		7559444026DB82A900B6640D /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		7559444226DB82D800B6640D /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		7559444626DB83DE00B6640D /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		7559444A26DB84B700B6640D /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
+		7559444D26DB853D00B6640D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7559444F26DB869400B6640D /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		818FFCD37FFFD08115AD1E56 /* Pods_Shisheo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shisheo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAE1423141AD70543029927 /* Pods-Shisheo-ShisheoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shisheo-ShisheoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shisheo-ShisheoUITests/Pods-Shisheo-ShisheoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F6E9E5C77B8DD5FEEF6AB1 /* Pods-Shisheo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shisheo.release.xcconfig"; path = "Target Support Files/Pods-Shisheo/Pods-Shisheo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		755943D426DB70F800B6640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F22A0DE96F611A46D8AD19 /* Pods_Shisheo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943EA26DB70FA00B6640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEE53E8E8C5F916A4C73673 /* Pods_ShisheoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943F526DB70FB00B6640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F00124C94A620554E1ECC4 /* Pods_Shisheo_ShisheoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC91952B93A9DF4EE1AE434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572370F99E93CFBC0F07A3BF /* Pods-Shisheo.debug.xcconfig */,
+				A7F6E9E5C77B8DD5FEEF6AB1 /* Pods-Shisheo.release.xcconfig */,
+				8CAE1423141AD70543029927 /* Pods-Shisheo-ShisheoUITests.debug.xcconfig */,
+				12D8DA7895E356709C75A17D /* Pods-Shisheo-ShisheoUITests.release.xcconfig */,
+				050EF9973C7A8A2264D07D1D /* Pods-ShisheoTests.debug.xcconfig */,
+				476E6090AFEA46E0B80F64C5 /* Pods-ShisheoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		755943CE26DB70F800B6640D = {
+			isa = PBXGroup;
+			children = (
+				755943D926DB70F800B6640D /* Shisheo */,
+				755943F026DB70FB00B6640D /* ShisheoTests */,
+				755943FB26DB70FB00B6640D /* ShisheoUITests */,
+				755943D826DB70F800B6640D /* Products */,
+				1DC91952B93A9DF4EE1AE434 /* Pods */,
+				95ACCCC7811152D957510A4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		755943D826DB70F800B6640D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				755943D726DB70F800B6640D /* Shisheo.app */,
+				755943ED26DB70FA00B6640D /* ShisheoTests.xctest */,
+				755943F826DB70FB00B6640D /* ShisheoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		755943D926DB70F800B6640D /* Shisheo */ = {
+			isa = PBXGroup;
+			children = (
+				755943DA26DB70F800B6640D /* AppDelegate.swift */,
+				7559440A26DB710600B6640D /* Modules */,
+				7559442426DB756E00B6640D /* Core */,
+				7559440B26DB711200B6640D /* Services */,
+				7559440C26DB714300B6640D /* Components */,
+				7559440E26DB718800B6640D /* BaseUtil */,
+				7559444C26DB852A00B6640D /* Models */,
+				7559440F26DB71A400B6640D /* Others */,
+				755943E326DB70FA00B6640D /* Assets.xcassets */,
+				755943E526DB70FA00B6640D /* LaunchScreen.storyboard */,
+				755943E826DB70FA00B6640D /* Info.plist */,
+			);
+			path = Shisheo;
+			sourceTree = "<group>";
+		};
+		755943F026DB70FB00B6640D /* ShisheoTests */ = {
+			isa = PBXGroup;
+			children = (
+				755943F126DB70FB00B6640D /* ShisheoTests.swift */,
+				755943F326DB70FB00B6640D /* Info.plist */,
+			);
+			path = ShisheoTests;
+			sourceTree = "<group>";
+		};
+		755943FB26DB70FB00B6640D /* ShisheoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				755943FC26DB70FB00B6640D /* ShisheoUITests.swift */,
+				755943FE26DB70FB00B6640D /* Info.plist */,
+			);
+			path = ShisheoUITests;
+			sourceTree = "<group>";
+		};
+		7559440A26DB710600B6640D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7559441126DB734300B6640D /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7559440B26DB711200B6640D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7559444F26DB869400B6640D /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7559440C26DB714300B6640D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7559443526DB7B6300B6640D /* CustomTableViewCell.swift */,
+				7559443726DB7B7100B6640D /* ReusableView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7559440E26DB718800B6640D /* BaseUtil */ = {
+			isa = PBXGroup;
+			children = (
+				7559442F26DB76E600B6640D /* BaseViewController.swift */,
+				7559443126DB770E00B6640D /* BaseViewModel.swift */,
+			);
+			path = BaseUtil;
+			sourceTree = "<group>";
+		};
+		7559440F26DB71A400B6640D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7559442A26DB762300B6640D /* Extensions */,
+				7559441026DB71AF00B6640D /* Enum */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7559441026DB71AF00B6640D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				7559442226DB752600B6640D /* StoryboardName.swift */,
+				7559444226DB82D800B6640D /* CustomError.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		7559441126DB734300B6640D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7559441726DB739700B6640D /* ViewController */,
+				7559442126DB74CD00B6640D /* ViewModel */,
+				7559441426DB737600B6640D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7559441426DB737600B6640D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7559441626DB738900B6640D /* Cell */,
+				7559441526DB737F00B6640D /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7559441526DB737F00B6640D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7559441226DB737200B6640D /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7559441626DB738900B6640D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7559441B26DB746000B6640D /* HomeTableViewCell.swift */,
+				7559441C26DB746000B6640D /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7559441726DB739700B6640D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7559441926DB73B700B6640D /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7559442126DB74CD00B6640D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7559443926DB7BE400B6640D /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7559442426DB756E00B6640D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7559442526DB757D00B6640D /* Coordinators */,
+				7559443D26DB819200B6640D /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7559442526DB757D00B6640D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7559442626DB75A000B6640D /* Coordinator.swift */,
+				7559442826DB75B600B6640D /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7559442A26DB762300B6640D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7559442B26DB765A00B6640D /* UIViewController.swift */,
+				7559442D26DB769000B6640D /* UIStoryboard.swift */,
+				7559443326DB7B1400B6640D /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7559443D26DB819200B6640D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7559443E26DB81A500B6640D /* Wrapable.swift */,
+				7559444026DB82A900B6640D /* Connectivity.swift */,
+				7559444626DB83DE00B6640D /* URLs.swift */,
+				7559444A26DB84B700B6640D /* APIRoute.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7559444C26DB852A00B6640D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7559444D26DB853D00B6640D /* HomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95ACCCC7811152D957510A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				818FFCD37FFFD08115AD1E56 /* Pods_Shisheo.framework */,
+				0DF2CD4AF5A0CB2889F2215F /* Pods_Shisheo_ShisheoUITests.framework */,
+				72C3BF36FB6856467190344C /* Pods_ShisheoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		755943D626DB70F800B6640D /* Shisheo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7559440126DB70FB00B6640D /* Build configuration list for PBXNativeTarget "Shisheo" */;
+			buildPhases = (
+				E47F81DC8CE0DB9C4B097DC0 /* [CP] Check Pods Manifest.lock */,
+				755943D326DB70F800B6640D /* Sources */,
+				755943D426DB70F800B6640D /* Frameworks */,
+				755943D526DB70F800B6640D /* Resources */,
+				CEF88B46F6E580CBA0353B3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shisheo;
+			productName = Shisheo;
+			productReference = 755943D726DB70F800B6640D /* Shisheo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		755943EC26DB70FA00B6640D /* ShisheoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7559440426DB70FB00B6640D /* Build configuration list for PBXNativeTarget "ShisheoTests" */;
+			buildPhases = (
+				8CB5A08EE4BD078011DDD669 /* [CP] Check Pods Manifest.lock */,
+				755943E926DB70FA00B6640D /* Sources */,
+				755943EA26DB70FA00B6640D /* Frameworks */,
+				755943EB26DB70FA00B6640D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				755943EF26DB70FA00B6640D /* PBXTargetDependency */,
+			);
+			name = ShisheoTests;
+			productName = ShisheoTests;
+			productReference = 755943ED26DB70FA00B6640D /* ShisheoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		755943F726DB70FB00B6640D /* ShisheoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7559440726DB70FB00B6640D /* Build configuration list for PBXNativeTarget "ShisheoUITests" */;
+			buildPhases = (
+				50CDFCA2B375AE042513F2DB /* [CP] Check Pods Manifest.lock */,
+				755943F426DB70FB00B6640D /* Sources */,
+				755943F526DB70FB00B6640D /* Frameworks */,
+				755943F626DB70FB00B6640D /* Resources */,
+				E348110380EBF9014EF18EAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				755943FA26DB70FB00B6640D /* PBXTargetDependency */,
+			);
+			name = ShisheoUITests;
+			productName = ShisheoUITests;
+			productReference = 755943F826DB70FB00B6640D /* ShisheoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		755943CF26DB70F800B6640D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					755943D626DB70F800B6640D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					755943EC26DB70FA00B6640D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 755943D626DB70F800B6640D;
+					};
+					755943F726DB70FB00B6640D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 755943D626DB70F800B6640D;
+					};
+				};
+			};
+			buildConfigurationList = 755943D226DB70F800B6640D /* Build configuration list for PBXProject "Shisheo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 755943CE26DB70F800B6640D;
+			productRefGroup = 755943D826DB70F800B6640D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				755943D626DB70F800B6640D /* Shisheo */,
+				755943EC26DB70FA00B6640D /* ShisheoTests */,
+				755943F726DB70FB00B6640D /* ShisheoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		755943D526DB70F800B6640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755943E726DB70FA00B6640D /* LaunchScreen.storyboard in Resources */,
+				755943E426DB70FA00B6640D /* Assets.xcassets in Resources */,
+				7559441E26DB746000B6640D /* HomeTableViewCell.xib in Resources */,
+				7559441326DB737200B6640D /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943EB26DB70FA00B6640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943F626DB70FB00B6640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50CDFCA2B375AE042513F2DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shisheo-ShisheoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB5A08EE4BD078011DDD669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShisheoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF88B46F6E580CBA0353B3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shisheo/Pods-Shisheo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shisheo/Pods-Shisheo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shisheo/Pods-Shisheo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E348110380EBF9014EF18EAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shisheo-ShisheoUITests/Pods-Shisheo-ShisheoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shisheo-ShisheoUITests/Pods-Shisheo-ShisheoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shisheo-ShisheoUITests/Pods-Shisheo-ShisheoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47F81DC8CE0DB9C4B097DC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shisheo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		755943D326DB70F800B6640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7559445026DB869400B6640D /* HomeService.swift in Sources */,
+				7559442C26DB765A00B6640D /* UIViewController.swift in Sources */,
+				7559444726DB83DE00B6640D /* URLs.swift in Sources */,
+				7559443226DB770E00B6640D /* BaseViewModel.swift in Sources */,
+				7559444326DB82D800B6640D /* CustomError.swift in Sources */,
+				7559443F26DB81A500B6640D /* Wrapable.swift in Sources */,
+				7559444B26DB84B700B6640D /* APIRoute.swift in Sources */,
+				755943DB26DB70F800B6640D /* AppDelegate.swift in Sources */,
+				7559442926DB75B600B6640D /* MainCoordinator.swift in Sources */,
+				7559444E26DB853D00B6640D /* HomeModel.swift in Sources */,
+				7559442326DB752600B6640D /* StoryboardName.swift in Sources */,
+				7559442E26DB769000B6640D /* UIStoryboard.swift in Sources */,
+				7559443626DB7B6300B6640D /* CustomTableViewCell.swift in Sources */,
+				7559443826DB7B7100B6640D /* ReusableView.swift in Sources */,
+				7559443026DB76E600B6640D /* BaseViewController.swift in Sources */,
+				7559443A26DB7BE400B6640D /* HomeViewModel.swift in Sources */,
+				7559443426DB7B1400B6640D /* UITableView.swift in Sources */,
+				7559444126DB82A900B6640D /* Connectivity.swift in Sources */,
+				7559442726DB75A000B6640D /* Coordinator.swift in Sources */,
+				7559441D26DB746000B6640D /* HomeTableViewCell.swift in Sources */,
+				7559441A26DB73B700B6640D /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943E926DB70FA00B6640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755943F226DB70FB00B6640D /* ShisheoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755943F426DB70FB00B6640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755943FD26DB70FB00B6640D /* ShisheoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		755943EF26DB70FA00B6640D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 755943D626DB70F800B6640D /* Shisheo */;
+			targetProxy = 755943EE26DB70FA00B6640D /* PBXContainerItemProxy */;
+		};
+		755943FA26DB70FB00B6640D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 755943D626DB70F800B6640D /* Shisheo */;
+			targetProxy = 755943F926DB70FB00B6640D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		755943E526DB70FA00B6640D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				755943E626DB70FA00B6640D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		755943FF26DB70FB00B6640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7559440026DB70FB00B6640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7559440226DB70FB00B6640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572370F99E93CFBC0F07A3BF /* Pods-Shisheo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shisheo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.Shisheo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7559440326DB70FB00B6640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F6E9E5C77B8DD5FEEF6AB1 /* Pods-Shisheo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shisheo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.Shisheo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7559440526DB70FB00B6640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050EF9973C7A8A2264D07D1D /* Pods-ShisheoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShisheoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.ShisheoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shisheo.app/Shisheo";
+			};
+			name = Debug;
+		};
+		7559440626DB70FB00B6640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476E6090AFEA46E0B80F64C5 /* Pods-ShisheoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShisheoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.ShisheoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shisheo.app/Shisheo";
+			};
+			name = Release;
+		};
+		7559440826DB70FB00B6640D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CAE1423141AD70543029927 /* Pods-Shisheo-ShisheoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShisheoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.ShisheoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shisheo;
+			};
+			name = Debug;
+		};
+		7559440926DB70FB00B6640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D8DA7895E356709C75A17D /* Pods-Shisheo-ShisheoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShisheoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shisheo.ShisheoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shisheo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		755943D226DB70F800B6640D /* Build configuration list for PBXProject "Shisheo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				755943FF26DB70FB00B6640D /* Debug */,
+				7559440026DB70FB00B6640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7559440126DB70FB00B6640D /* Build configuration list for PBXNativeTarget "Shisheo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7559440226DB70FB00B6640D /* Debug */,
+				7559440326DB70FB00B6640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7559440426DB70FB00B6640D /* Build configuration list for PBXNativeTarget "ShisheoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7559440526DB70FB00B6640D /* Debug */,
+				7559440626DB70FB00B6640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7559440726DB70FB00B6640D /* Build configuration list for PBXNativeTarget "ShisheoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7559440826DB70FB00B6640D /* Debug */,
+				7559440926DB70FB00B6640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 755943CF26DB70F800B6640D /* Project object */;
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="275" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="Shisheo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="512" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FiR-lw-L3q">
+                        <rect key="frame" x="26" y="15" width="460" height="168"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="168" id="4HV-RD-bcg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holy Grail Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-fO-iEJ">
+                        <rect key="frame" x="26" y="193" width="367" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="yb1-Aa-55R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-4u-XJN">
+                        <rect key="frame" x="26" y="210" width="460" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQU-fb-i38">
+                                <rect key="frame" x="0.0" y="0.0" width="460" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-vm-sU4">
+                                <rect key="frame" x="0.0" y="19.5" width="460" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="L6Z-U6-4ls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="8"/>
+                                <color key="textColor" red="0.78030639889999998" green="0.78044146299999995" blue="0.780297935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZp-Cw-aT8">
+                                <rect key="frame" x="0.0" y="33.5" width="460" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="GYd-9H-WjW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.091155461970000004" green="0.70728826519999999" blue="0.7012415528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-Gc-ZNg">
+                        <rect key="frame" x="403" y="193" width="83" height="15"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-vc-u6E">
+                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="vVQ-xk-9PE">
+                                <rect key="frame" x="17" y="0.0" width="15" height="15"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="W7y-rk-imz">
+                                <rect key="frame" x="34" y="0.0" width="15" height="15"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="9Rb-Vg-vPY">
+                                <rect key="frame" x="51" y="0.0" width="15" height="15"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-1Y-q9X">
+                                <rect key="frame" x="68" y="0.0" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="PFV-jL-Mp1"/>
+                                    <constraint firstAttribute="width" constant="15" id="eMu-7T-zQY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="eHx-4u-XJN" secondAttribute="bottom" id="2nm-kl-LRL"/>
+                    <constraint firstItem="FiR-lw-L3q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Fya-FE-BLP"/>
+                    <constraint firstAttribute="trailing" secondItem="FiR-lw-L3q" secondAttribute="trailing" constant="26" id="Jgb-vL-DBl"/>
+                    <constraint firstItem="eHx-4u-XJN" firstAttribute="trailing" secondItem="FiR-lw-L3q" secondAttribute="trailing" id="Lmu-0K-ULW"/>
+                    <constraint firstItem="bFU-Gc-ZNg" firstAttribute="leading" secondItem="ccg-fO-iEJ" secondAttribute="trailing" constant="10" id="Mxp-Il-LyC"/>
+                    <constraint firstItem="ccg-fO-iEJ" firstAttribute="leading" secondItem="FiR-lw-L3q" secondAttribute="leading" id="SLi-1C-iqo"/>
+                    <constraint firstItem="bFU-Gc-ZNg" firstAttribute="trailing" secondItem="FiR-lw-L3q" secondAttribute="trailing" id="WV9-fM-hVO"/>
+                    <constraint firstItem="ccg-fO-iEJ" firstAttribute="top" secondItem="FiR-lw-L3q" secondAttribute="bottom" constant="10" id="hMD-F8-wLQ"/>
+                    <constraint firstItem="eHx-4u-XJN" firstAttribute="leading" secondItem="FiR-lw-L3q" secondAttribute="leading" id="iT6-ws-vmG"/>
+                    <constraint firstItem="FiR-lw-L3q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="iTa-Yf-KNW"/>
+                    <constraint firstItem="eHx-4u-XJN" firstAttribute="top" secondItem="ccg-fO-iEJ" secondAttribute="bottom" constant="2" id="lsi-sd-lSu"/>
+                    <constraint firstItem="bFU-Gc-ZNg" firstAttribute="top" secondItem="FiR-lw-L3q" secondAttribute="bottom" constant="10" id="rIv-LN-Ymm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="OQU-fb-i38" id="NLV-cT-zVh"/>
+                <outlet property="discountLabel" destination="sZp-Cw-aT8" id="GuM-hZ-lBV"/>
+                <outlet property="priceLabel" destination="Fdf-vm-sU4" id="8kJ-iY-08s"/>
+                <outlet property="restImageView" destination="FiR-lw-L3q" id="hSs-Bo-X6h"/>
+                <outlet property="starStackView" destination="bFU-Gc-ZNg" id="zGF-Dm-cOv"/>
+                <outlet property="titleLabel" destination="ccg-fO-iEJ" id="2dM-A0-GBN"/>
+            </connections>
+            <point key="canvasLocation" x="276.81159420289856" y="158.37053571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Star" width="512" height="512"/>
+    </resources>
+</document>
